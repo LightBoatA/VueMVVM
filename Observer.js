@@ -75,8 +75,6 @@ class Observer{
         if(Dep.target) {
           console.log('添加依赖',Dep.target,'属性',key);
           dep.addSub(Dep.target);
-        }else {
-          console.log('Dep.target为空');
         }
         return value;
       },
